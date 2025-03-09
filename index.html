@@ -30,31 +30,30 @@
         </div>
     </nav>
     
-    
     <!-- Cards Section -->
     <div class="container d-flex justify-content-center align-items-center vh-100">
         <div class="row row-cols-1 row-cols-md-2 g-4">
             <div class="col">
-                <div class="card">
-                    <img src="pictures/ramen.webp" class="card-img" alt="Item 1">
+                <div class="card" data-bs-toggle="modal" data-bs-target="#ramenModal">
+                    <img src="pictures/ramen.webp" class="card-img" alt="Ramen">
                     <div class="card-overlay">
                         <h5>Ramen</h5>
-                        <p>A noodle soup with a rich broth and has various toppings.</p>
+                        <p>A noodle soup with a rich broth and various toppings.</p>
                     </div>
                 </div>
             </div>
             <div class="col">
-                <div class="card">
-                    <img src="pictures/sushi.webp" class="card-img" alt="Item 2">
+                <div class="card" data-bs-toggle="modal" data-bs-target="#sushiModal">
+                    <img src="pictures/sushi.webp" class="card-img" alt="Sushi">
                     <div class="card-overlay">
                         <h5>Sushi</h5>
-                        <p>A bit-sized ball of rice topped with a fresh slice of fish or other seafood.</p>
+                        <p>A bite-sized ball of rice topped with a fresh slice of fish or other seafood.</p>
                     </div>
                 </div>
             </div>
             <div class="col">
-                <div class="card">
-                    <img src="pictures/tonkatsu.webp" class="card-img" alt="Item 3">
+                <div class="card" data-bs-toggle="modal" data-bs-target="#tonkatsuModal">
+                    <img src="pictures/tonkatsu.webp" class="card-img" alt="Tonkatsu">
                     <div class="card-overlay">
                         <h5>Tonkatsu</h5>
                         <p>A breaded, deep-fried pork cutlet.</p>
@@ -62,12 +61,93 @@
                 </div>
             </div>
             <div class="col">
-                <div class="card">
-                    <img src="pictures/unagi.jpg" class="card-img" alt="Item 4">
+                <div class="card" data-bs-toggle="modal" data-bs-target="#unagiModal">
+                    <img src="pictures/unagi.jpg" class="card-img" alt="Unagi">
                     <div class="card-overlay">
                         <h5>Unagi</h5>
                         <p>Grilled eel fillet served over a bed of rice.</p>
                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modals -->
+    <div class="modal fade" id="ramenModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Ramen</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="pictures/ramen.webp" class="img-fluid" alt="Ramen">
+                    <p><strong>Ingredients:</strong> Noodles, broth, sliced pork, green onions, soft-boiled egg, miso paste.</p>
+                    <p><strong>Procedure:</strong></p>
+                    <p>Heat the broth in a pot, then add soy sauce and miso paste.</p>
+                    <p>Cook the ramen noodles according to package instructions.</p>
+                    <p>Divide the noodles into bowls and pour the hot broth over them.</p>
+                    <p>Top with sliced pork, boiled eggs, and green onions.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal fade" id="sushiModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Sushi</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="pictures/sushi.webp" class="img-fluid" alt="Sushi">
+                    <p><strong>Ingredients:</strong> Vinegar, rice, fresh fish, nori, soy sauce, , sugar, wasabi.</p>
+                    <p><strong>Procedure:</strong></p>
+                    <p>Rinse the rice, then cook it with water.</p>
+                    <p>Mix rice vinegar and sugar, then combine with the cooked rice.</p>
+                    <p>Shape the rice into small balls and top with fresh fish.</p>
+                    <p>Wrap with nori if desired.</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal fade" id="tonkatsuModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Tonkatsu</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="pictures/tonkatsu.webp" class="img-fluid" alt="Tonkatsu">
+                    <p><strong>Ingredients:</strong> Pork cutlet, panko breadcrumbs, cabbage, tonkatsu sauce.</p>
+                    <p><strong>Procedure:</strong></p>
+                    <p>Season pork cutlets with salt and pepper.</p>
+                    <p>Dredge in flour, dip in egg, then coat with panko breadcrumbs.</p>
+                    <p>Deep-fry in hot oil until golden brown.</p>
+                    <p>Serve with tonkatsu sauce and shredded cabbage.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal fade" id="unagiModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Unagi</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="pictures/unagi.jpg" class="img-fluid" alt="Unagi">
+                    <p><strong>Ingredients:</strong> Freshwater eel, soy sauce, mirin, sugar, rice.</p>
+                    <p><strong>Procedure:</strong></p>
+                    <p>Mix soy sauce, mirin, and sugar to make a sauce.</p>
+                    <p>Grill the eel fillet while brushing with sauce.</p>
+                    <p>Serve the eel over steamed rice.</p>
                 </div>
             </div>
         </div>
